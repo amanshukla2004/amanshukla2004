@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🧠 Memory Match — Aman Shukla</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{background:#0D1117;font-family:'Fira Code',monospace;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;color:#fff;overflow:hidden;}
+    body::before{content:'';position:fixed;inset:0;z-index:0;background:radial-gradient(ellipse at 30% 60%,rgba(168,85,247,.15) 0%,transparent 60%),radial-gradient(ellipse at 70% 30%,rgba(255,111,97,.1) 0%,transparent 50%);}
+    h1{font-size:1.8rem;margin-bottom:6px;z-index:1;background:linear-gradient(135deg,#A855F7,#FF6F61);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+    .sub{font-size:.82rem;color:#888;margin-bottom:14px;z-index:1;}
+    #info{display:flex;gap:24px;margin-bottom:14px;z-index:1;}
+    #info span{font-size:.95rem;color:#A855F7;}
+    #grid{display:grid;grid-template-columns:repeat(4,80px);gap:10px;z-index:1;}
+    .card{width:80px;height:100px;perspective:600px;cursor:pointer;}
+    .card-inner{position:relative;width:100%;height:100%;transition:transform .45s;transform-style:preserve-3d;}
+    .card.flipped .card-inner,.card.matched .card-inner{transform:rotateY(180deg);}
+    .card-front,.card-back{position:absolute;inset:0;border-radius:10px;display:flex;align-items:center;justify-content:center;backface-visibility:hidden;font-size:2rem;}
+    .card-front{background:rgba(168,85,247,.15);border:1px solid rgba(168,85,247,.35);box-shadow:0 0 20px rgba(168,85,247,.12);}
+    .card-front::after{content:'?';color:rgba(168,85,247,.5);font-size:1.6rem;}
+    .card-back{background:rgba(13,17,23,.85);border:1px solid rgba(255,111,97,.4);transform:rotateY(180deg);box-shadow:0 0 25px rgba(255,111,97,.15);}
+    .card.matched .card-back{border-color:rgba(72,199,142,.5);box-shadow:0 0 25px rgba(72,199,142,.2);}
+    #restart{margin-top:18px;z-index:1;padding:10px 28px;font-family:inherit;font-size:.95rem;border:none;border-radius:8px;cursor:pointer;display:none;background:linear-gradient(135deg,#A855F7,#FF6F61);color:#fff;}
+    #restart:hover{opacity:.85;}
+    .back{position:fixed;top:16px;left:16px;z-index:2;color:#A855F7;text-decoration:none;font-size:.85rem;}
+  </style>
+</head>
+<body>
+  <a class="back" href="https://github.com/amanshukla2004">← Back to Profile</a>
+  <h1>🧠 MEMORY MATCH</h1>
+  <p class="sub">Find all matching pairs!</p>
+  <div id="info">
+    <span>Moves: <b id="moves">0</b></span>
+    <span>Pairs: <b id="pairs">0</b>/8</span>
+  </div>
+  <div id="grid"></div>
+  <button id="restart" onclick="init()">Play Again</button>
+
+  <script>
+    const EMOJIS=['🚀','⚡','🎮','🐍','💜','🔥','🌟','🧠'];
+    const grid=document.getElementById('grid');
+    let cards,flipped,matched,moves,lock;
+
+    function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+
+    function init(){
+      moves=0;matched=0;flipped=[];lock=false;
+      document.getElementById('moves').textContent=0;
+      document.getElementById('pairs').textContent='0';
+      document.getElementById('restart').style.display='none';
+      cards=shuffle([...EMOJIS,...EMOJIS]);
+      grid.innerHTML='';
+      cards.forEach((emoji,i)=>{
+        const card=document.createElement('div');card.className='card';card.dataset.idx=i;
+        card.innerHTML=`<div class="card-inner"><div class="card-front"></div><div class="card-back">${emoji}</div></div>`;
+        card.addEventListener('click',()=>flip(card,emoji));
+        grid.appendChild(card);
+      });
+    }
+    function flip(card,emoji){
+      if(lock||card.classList.contains('flipped')||card.classList.contains('matched'))return;
+      card.classList.add('flipped');flipped.push({card,emoji});
+      if(flipped.length===2){
+        moves++;document.getElementById('moves').textContent=moves;lock=true;
+        const[a,b]=flipped;
+        if(a.emoji===b.emoji){
+          a.card.classList.add('matched');b.card.classList.add('matched');
+          matched++;document.getElementById('pairs').textContent=matched;
+          flipped=[];lock=false;
+          if(matched===8)document.getElementById('restart').style.display='inline-block';
+        }else{
+          setTimeout(()=>{a.card.classList.remove('flipped');b.card.classList.remove('flipped');flipped=[];lock=false;},800);
+        }
+      }
+    }
+    init();
+  </script>
+</body>
+</html>
