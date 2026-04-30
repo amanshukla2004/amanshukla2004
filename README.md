@@ -105,7 +105,7 @@
 <br/>
 
 <div align="center">
-  <i>"Heroes share their meat with others. I want ALL the meat!" 🍖 — Monkey D. Luffy</i>
+  <i>"It’s not about if I can. I’m doing this because I want to." 🍖 — Monkey D. Luffy</i>
 </div>
 
 ---
