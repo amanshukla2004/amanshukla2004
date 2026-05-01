@@ -86,25 +86,21 @@
 
 ---
 
-## <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnpuYnRiYm81amdyN256d3F0amhmZ2c5MXAxN2JjMTRraDA3a3NvcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hwaFAsPi7wU6LHwn84/giphy.gif" width="28"> My Vibe
+## <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnpuYnRiYm81amdyN256d3F0amhmZ2c5MXAxN2JjMTRraDA3a3NvcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hwaFAsPi7wU6LHwn84/giphy.gif" width="44"> My Vibe
 
 <br/>
 
 <div align="center">
-  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaG4zZmM4cHp3a3k4eW1mcDJjMXF5YWJwdWRxcTQ0eWJwbGVjcGZmaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bi6RQ5x3tqoSI/giphy.gif" width="200" alt="computer screen"/>  &nbsp;
-
-  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzhsZWFydGdjNWV4M2dsaHAyYm52ZzZiODJ3ODV5cG93ZWd1dmp4ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HoffxyN8ghVuw/giphy.gif" width="200" alt="typing"/>  &nbsp;
-
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaG4zZmM4cHp3a3k4eW1mcDJjMXF5YWJwdWRxcTQ0eWJwbGVjcGZmaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bi6RQ5x3tqoSI/giphy.gif" width="200" alt="computer screen"/> &nbsp;
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzhsZWFydGdjNWV4M2dsaHAyYm52ZzZiODJ3ODV5cG93ZWd1dmp4ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HoffxyN8ghVuw/giphy.gif" width="200" alt="typing"/> &nbsp;
   <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnI4bWh2amYwZ2Z0dmx5M2o3bXcxMXY1cjd4MXlsaXNpZDVqczBqcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3osxY9kuM2NGUfvThe/giphy.gif" width="200" alt="error"/>
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHpiaDdkMXgzeXp0Mm0xc3I3MHV6bngybmhxOXA2eGQ3amMxODZyaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2djOd5Gy6dzCiV600H/giphy.gif" width="200" alt="anya heh"/>  &nbsp;
-  
-  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExODRkMWk5OWV6aHc2Y2dhZnJua3dleTQ5bmcwMHViNTJlMWhvcDBycSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/du3J3cXyzhj75IOgvA/giphy.gif" width="200" alt="github"/>  &nbsp;
-
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHpiaDdkMXgzeXp0Mm0xc3I3MHV6bngybmhxOXA2eGQ3amMxODZyaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2djOd5Gy6dzCiV600H/giphy.gif" width="200" alt="anya heh"/> &nbsp;
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExODRkMWk5OWV6aHc2Y2dhZnJua3dleTQ5bmcwMHViNTJlMWhvcDBycSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/du3J3cXyzhj75IOgvA/giphy.gif" width="200" alt="github"/> &nbsp;
   <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGp4d20yZ3ZieXhyNmhodnBtNGV1bzJlN2s4ODU5Zzg2bnpxaWpvZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gDPxwdP6SKFnsWDJ2u/giphy.gif" width="200" alt="bug feature"/>
 </div>
 
