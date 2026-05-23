@@ -24,7 +24,7 @@
 
 - 💬 Ask me about **Java, Spring Boot, React, REST APIs, and full-stack development**
 
-- 📫 How to reach me **as.amanshukla2004@gmail.com**
+- 📫 How to reach me **work.amanshukla2004@gmail.com**
 
 - ⚡ Fun fact **I've spent hours fixing a bug… only to realize it was a missing semicolon**
 
